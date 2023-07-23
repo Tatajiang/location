@@ -20,6 +20,8 @@ public class LocationController {
         if (StrUtil.isBlank(code) || code.length() > 6) {
             return "地区编码不能超过 6 位数";
         }
-        return locationInfo.searchLocationName(code);
+        String reslut = code;
+        //reslut = locationInfo.searchLocationName(code);
+        return reslut;
     }
 }
